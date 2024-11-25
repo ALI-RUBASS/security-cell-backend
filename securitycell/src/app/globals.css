@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* styles/globals.css */
+@import url('fonts.css');
+
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+}
+
+
+@layer base {
+  .font-outline-5 {
+    -webkit-text-stroke: 0.5px black;
+  }
+}
+
+.required:after {
+  content: " *";
+  margin-left: 6px;
+  color: red;
+}
+
+
+.required {
+  display: flex;
+  align-items: center;
+}
+
+.required > .relative {
+  flex-grow: 1;
+}
+
+.required input[type="email"] {
+  width: calc(100%); /* Adjust based on the width of the asterisk */
+}
+
+
+
+/* .required input:required:invalid,
+.required input:required:invalid:focus,
+.required input.error {
+  border-color: red;
+} */
+
+
+
+@keyframes pulseBackground {
+  0% {
+    background-position: 50% 50%, 50% 50%;
+    background-size: 0% 0%, 100% 100%;
+    background-repeat: no-repeat;
+    background-color: #ff0066;
+  }
+  100% {
+    background-position: 50% 50%, 50% 50%;
+    background-size: 150% 150%, 100% 100%;
+    background-repeat: no-repeat;
+    background-color: #cc0099;
+  }
+}

@@ -1,0 +1,25 @@
+/* styles/fonts.css */
+
+@font-face {
+    font-family: 'Urbanist';
+    src: url('../assets/fonts/Urbanist-Regular.ttf') format('truetype');
+    /* Add other font formats here if necessary */
+  }
+  
+@font-face {
+    font-family: 'Poppins';
+    src: url('../assets/fonts/Poppins-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'ProtestGuerrilla';
+  src: url('../assets/fonts/ProtestGuerrilla-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Edane';
+  src: url('../assets/fonts/edane.ttf') format('truetype');
+}
+
+  /* Add @font-face rules for other font weights or styles if needed */
+  

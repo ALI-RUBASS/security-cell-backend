@@ -1,0 +1,10 @@
+/* Disable dark mode for the entire app */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #fff;
+        /* Set background color to white */
+        color: #000;
+        /* Set text color to black */
+    }
+}
+
